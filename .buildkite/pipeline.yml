@@ -1,0 +1,11 @@
+steps:
+  - label: "Deploy container to ECR"
+    branches: main
+    command: .buildkite/scripts/deploy
+    plugins:
+      - cultureamp/aws-assume-role#v0.2.0:
+          role: arn:aws:iam::009999273940:role/fluentd-kubernetes-daemonset-deploy
+      - ecr#v2.3.0:
+          login: true
+          region: "us-west-2"
+    timeout_in_minutes: 15
