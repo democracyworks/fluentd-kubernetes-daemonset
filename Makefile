@@ -10,7 +10,7 @@
 # It's still possible to build, tag and push images manually. Just use:
 #	make release-all
 
-IMAGE_NAME := fluent/fluentd-kubernetes
+IMAGE_NAME := 009999273940.dkr.ecr.us-west-2.amazonaws.com/democracyworks/fluentd-kubernetes-daemonset
 X86_IMAGES := \
 	v1.12/debian-azureblob:v1.12.1-debian-azureblob-1.0,v1.12-debian-azureblob-1 \
 	v1.12/debian-elasticsearch7:v1.12.1-debian-elasticsearch7-1.0,v1.12-debian-elasticsearch7-1,v1-debian-elasticsearch \
