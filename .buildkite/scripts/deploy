@@ -12,9 +12,9 @@ docker build --pull -t "${latest_image}" \
   docker-image/v1.12/debian-papertrail
 
 docker tag ${latest_image} \
-  ${DOCKER_IMAGE_NAME}:v1.12.0-debian-papertrail-1.1
+  ${DOCKER_IMAGE_NAME}:v1.12.1-debian-papertrail-1.0
 docker tag ${latest_image} \
   ${DOCKER_IMAGE_NAME}:v1.12-debian-papertrail-1
 
-docker push ${DOCKER_IMAGE_NAME}:v1.12.0-debian-papertrail-1.1
+docker push ${DOCKER_IMAGE_NAME}:v1.12.1-debian-papertrail-1.0
 docker push ${DOCKER_IMAGE_NAME}:v1.12-debian-papertrail-1
