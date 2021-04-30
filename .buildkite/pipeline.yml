@@ -14,6 +14,7 @@ steps:
       - docker#v3.8.0:
           image: cimg/base:stable
           user: root
+          propagate-aws-auth-tokens: true
           environment:
             - "DOCKERFILE=v1.12/debian-papertrail"
           volumes:
